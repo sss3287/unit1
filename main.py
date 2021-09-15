@@ -11,36 +11,17 @@ def test_drive():
     turtle.circle(50)
     input()
 
-def turtle_state():
-    x = turtle.isdown()
-    print ("Turtle pen state", x)
-    y = turtle.heading()
-    print ("Turtle heading is", y)
-    print ("xcor:",turtle.xcor(),"ycor:",turtle.ycor())
-
-def draw_square(side,color):
-    turtle.setheading(50)
+def draw_star():
+    turtle.color('red', 'orange')
     turtle.begin_fill()
-    turtle.fillcolor(color)
-    turtle.forward(side)
-    turtle.left(90)
-    turtle.forward(side)
-    turtle.left(90)
-    turtle.forward(side)
-    turtle.left(90)
-    turtle.forward(side)
-    turtle.left(90)
-    turtle.end_fill()
-
+    while True:
+        turtle.forward(200)
+        turtle.left(170)
+    if abs() (turtle.pos()) < 1:
+            turtle.end_fill()
 
 def main():
     #test_drive()
-    draw_square(50,"red")
-    draw_square(100,"yellow")
-    draw_square(150,"orange")
-
-
-    input("hit anything to exit")
-    turtle_state()
+    draw_star()
 
 main()
